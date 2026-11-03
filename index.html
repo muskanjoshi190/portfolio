@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muskan Joshi | Software Developer</title>
+
+    <meta name="description" content="Portfolio of Muskan Joshi, Computer Science Engineering student and software developer.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<canvas id="three-bg"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">MJ<span>.</span></a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+
+                <li class="nav-item ms-lg-3">
+                    <a class="nav-contact" href="#contact">
+                        Let's Talk <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+
+    <div class="hero-grid-bg"></div>
+
+    <div class="container hero-container">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-7 hero-content">
+
+                <div class="hero-status">
+                    <span class="status-dot"></span>
+                    OPEN TO INTERNSHIP OPPORTUNITIES
+                </div>
+
+                <p class="hero-intro">HELLO! I'M</p>
+
+                <h1 class="hero-name">
+                    Muskan
+                    <span>Joshi</span>
+                </h1>
+
+                <div class="hero-role">
+                    <span class="role-bracket">&lt;</span>
+                    <span id="typing">Software Developer</span>
+                    <span class="role-cursor">_</span>
+                    <span class="role-bracket">/&gt;</span>
+                </div>
+
+                <p class="hero-description">
+                    Computer Science Engineering student with a strong
+                    foundation in Java, Python and web development.
+                    I enjoy building practical software applications,
+                    exploring new technologies and solving problems through code.
+                </p>
+
+                <div class="hero-tech-line">
+                    <span>JAVA</span>
+                    <i></i>
+                    <span>PYTHON</span>
+                    <i></i>
+                    <span>FULL STACK</span>
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn-main">
+                        Explore Projects
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                    <a href="assets/Muskan-Joshi-Resume.pdf"
+                       class="btn-outline" target="_blank">
+                        Download Resume
+                        <i class="bi bi-download"></i>
+                    </a>
+
+                </div>
+
+                <!-- SOCIAL LINKS -->
+                <div class="social-links hero-socials">
+
+                    <a href="https://github.com/muskanjoshi190"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/muskan-joshi-140310341"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <!-- GMAIL ICON -->
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=muskanjoshi24122005@gmail.com"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Send Email"
+                       title="Send Email">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT VISUAL -->
+            <div class="col-lg-5">
+
+                <div class="hero-visual">
+
+                    <div class="visual-orbit orbit-a"></div>
+                    <div class="visual-orbit orbit-b"></div>
+
+                    <div class="visual-label label-top">
+                        <span class="label-pulse"></span>
+                        DEVELOPER PROFILE
+                    </div>
+
+                    <div class="hero-photo-card">
+
+                        <div class="photo-topbar">
+                            <span></span><span></span><span></span>
+                            <small>muskan.dev</small>
+                        </div>
+
+                        <div class="photo-frame">
+
+                            <img
+                                src="images/profile.jpeg"
+                                alt="Muskan Joshi"
+                                id="profilePhoto"
+                                class="profile-photo"
+                                title="Click to view full photo"
+                                tabindex="0"
+                                role="button"
+                                aria-label="View full profile photo"
+                            >
+
+                            <div id="profileFallback">MJ</div>
+
+                        </div>
+
+                        <div class="photo-caption">
+
+                            <div>
+                                <strong>Muskan Joshi</strong>
+                                <small>Software Developer</small>
+                            </div>
+
+                            <i class="bi bi-patch-check-fill"></i>
+
+                        </div>
+                    </div>
+
+
+                    <!-- FLOATING CODE WINDOW -->
+                    <div class="code-float">
+
+                        <div class="code-header">
+                            <span></span><span></span><span></span>
+                            <small>developer.js</small>
+                        </div>
+
+                        <div class="code-content">
+
+                            <p><span>const</span> developer = {</p>
+                            <p>&nbsp; name: <b>"Muskan"</b>,</p>
+                            <p>&nbsp; role: <b>"Developer"</b>,</p>
+                            <p>&nbsp; skills: [</p>
+                            <p>&nbsp;&nbsp; <b>"Java"</b>, <b>"Python"</b>,</p>
+                            <p>&nbsp;&nbsp; <b>"Web Dev"</b></p>
+                            <p>&nbsp; ]</p>
+                            <p>};</p>
+
+                            <p class="code-success">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Building something great...
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="visual-label label-bottom">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                        ALWAYS LEARNING
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-bottom-line">
+            <span>BASED IN INDORE, INDIA</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>A little about <span>me</span></h2>
+        </div>
+
+        <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-7">
+
+                <p class="about-text">
+                    I'm Muskan Joshi, a B.Tech Computer Science Engineering
+                    student at Prestige Institute of Engineering, Management
+                    and Research, Indore (2023–2027).
+                </p>
+
+                <p class="about-text">
+                    I have a strong interest in software development,
+                    Java programming, Python and full-stack web technologies.
+                    Through academic and personal projects, I have gained
+                    practical experience in application development,
+                    database management and problem-solving.
+                </p>
+
+                <p class="about-text">
+                    I enjoy learning new technologies, improving my coding
+                    skills and building practical solutions to real-world problems.
+                </p>
+
+                <a href="#contact" class="text-link">
+                    Let's connect <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+
+                    <p class="eyebrow">EDUCATION</p>
+
+                    <h3>B.Tech – Computer Science</h3>
+
+                    <p>
+                        Prestige Institute of Engineering, Management and Research
+                    </p>
+
+                    <span>2023 – 2027 · Indore</span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section-padding skills-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">WHAT I WORK WITH</p>
+            <h2>My technical <span>toolkit</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-code-square"></i>
+                    <h3>Programming</h3>
+                    <p>Java · Python · C++ · SQL</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-window"></i>
+                    <h3>Web Development</h3>
+                    <p>HTML · CSS · JavaScript · Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-database"></i>
+                    <h3>Backend & Database</h3>
+                    <p>Flask · MySQL · SQLite</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-cpu"></i>
+                    <h3>Tools & Technologies</h3>
+                    <p>Git · GitHub · OpenCV · YOLOv8 · Scikit-learn</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+            <h2>Featured <span>projects</span></h2>
+            <p class="section-subtitle">
+                A selection of projects where I turn concepts into working solutions.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-number">01 / WEB APP</span>
+                        <i class="bi bi-calendar-check project-icon"></i>
+                    </div>
+
+                    <h3>StudySync AI</h3>
+
+                    <p>
+                        A smart student planner to organize subjects, tasks, exams
+                        and study routines with a focus timer and rule-based timetable.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span><span>Flask</span>
+                        <span>SQLite</span><span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/muskanjoshi190/StudySync-AI"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View Repository <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </article>
+            </div>
+
+
+            <div class="col-lg-6">
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-number">02 / DESKTOP APP</span>
+                        <i class="bi bi-folder-check project-icon"></i>
+                    </div>
+
+                    <h3>FileSense AI</h3>
+
+                    <p>
+                        A smart file organizer that identifies duplicate and similar
+                        files using text similarity and file hashing techniques.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span><span>Machine Learning</span>
+                        <span>SQLite</span><span>Tkinter</span>
+                    </div>
+
+                    <a href="https://github.com/muskanjoshi190/FileSense-AI"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View Repository <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </article>
+            </div>
+
+
+            <div class="col-lg-6">
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-number">03 / DATA ANALYTICS</span>
+                        <i class="bi bi-bar-chart-line project-icon"></i>
+                    </div>
+
+                    <h3>Python Data Analytics Practice</h3>
+
+                    <p>
+                        A collection of hands-on exercises covering data analysis,
+                        data manipulation, statistics and visualization using Python.
+                    </p>
+
+                    <div class="tech-tags">
+                        <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+                    </div>
+
+                    <a href="https://github.com/muskanjoshi190/Python-Data-Analytics-Practice"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        View Repository <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </article>
+            </div>
+
+
+            <div class="col-lg-6">
+                <article class="project-card project-note">
+
+                    <div class="project-top">
+                        <span class="project-number">04 / WHAT'S NEXT</span>
+                        <i class="bi bi-plus-circle project-icon"></i>
+                    </div>
+
+                    <h3>Always Building</h3>
+
+                    <p>
+                        Exploring new technologies, improving my development skills
+                        and working on ideas that solve practical problems.
+                    </p>
+
+                    <a href="https://github.com/muskanjoshi190"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        Explore GitHub <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-padding skills-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">MY JOURNEY</p>
+            <h2>Experience & <span>learning</span></h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="eyebrow">COLLEGE EXPERIENCE</p>
+                <h3>Technical Subhead</h3>
+                <h4>PIEMR AI Club</h4>
+                <p>
+                    Contributing to technical activities and collaborative learning
+                    within the college AI community.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <p class="eyebrow">TRAINING</p>
+                <h3>Java Full Stack Developer Training</h3>
+                <h4>Infoviaan Technologies</h4>
+                <p>
+                    Completed training focused on Java programming and
+                    full-stack development fundamentals.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding contact-section">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="row gy-5">
+
+                <div class="col-lg-5">
+
+                    <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+
+                    <h2>Let's create something <span>great</span></h2>
+
+                    <p class="contact-description">
+                        Have an opportunity, project idea or just want to connect?
+                        My inbox is open.
+                    </p>
+
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=muskanjoshi24122005@gmail.com"
+                       class="email-icon"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Send Email"
+                       title="Send Email">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>muskanjoshi24122005@gmail.com</span>
+                    </a>
+
+                    <div class="social-links contact-socials">
+
+                        <a href="https://github.com/muskanjoshi190"
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/in/muskan-joshi-140310341"
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <div class="col-lg-7">
+
+                    <form id="portfolio-mail-form" class="contact-form">
+
+                        <input
+                            type="text"
+                            id="visitor-name"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            id="visitor-email"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                        <textarea
+                            id="visitor-message"
+                            placeholder="Your Message"
+                            required
+                        ></textarea>
+
+                        <button type="submit" id="mail-send-btn">
+                            Send Message →
+                        </button>
+
+                        <p id="mail-form-status"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+
+        <a class="navbar-brand" href="#home">MJ<span>.</span></a>
+
+        <p>
+            Designed & built by Muskan Joshi ·
+            <span id="year"></span>
+        </p>
+
+        <a href="#home" class="back-top">Back to top ↑</a>
+
+    </div>
+</footer>
+
+
+<!-- PROFILE PHOTO VIEWER -->
+<div id="photoModal" class="photo-modal" aria-hidden="true">
+
+    <button id="closePhoto" class="close-photo" aria-label="Close">
+        &times;
+    </button>
+
+    <img id="fullProfilePhoto" src=""
+         alt="Muskan Joshi - Full Photo">
+
+</div>
+
+
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+
+<!-- CONTACT FORM: OPEN GMAIL COMPOSE -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("portfolio-mail-form");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("visitor-name").value.trim();
+        const email = document.getElementById("visitor-email").value.trim();
+        const message = document.getElementById("visitor-message").value.trim();
+
+        const status = document.getElementById("mail-form-status");
+
+        if (!name || !email || !message) {
+            status.textContent = "Please fill in all fields.";
+            return;
+        }
+
+        const subject = encodeURIComponent("Portfolio Contact Message");
+
+        const body = encodeURIComponent(
+            "Hello Muskan,\n\n" +
+            "You have received a new message through your portfolio.\n\n" +
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n\n" +
+            "Message:\n" + message
+        );
+
+        const mailURL =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "&to=muskanjoshi24122005@gmail.com" +
+            "&su=" + subject +
+            "&body=" + body;
+
+        status.textContent = "Opening Gmail. Please click Send there.";
+
+        window.open(mailURL, "_blank");
+
+    });
+
+});
+</script>
+
+</body>
+</html>
